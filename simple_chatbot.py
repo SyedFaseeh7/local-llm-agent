@@ -117,7 +117,7 @@ def build_tool_calls_payload(tool_calls):
                     "type":"function",
                     "function":{
                         "name":tool.function.name,
-                        "arguments":tool.arguments,
+                        "arguments":tool.function.arguments,
                     }
                 }
                 payload.append(tool_call_dict)
